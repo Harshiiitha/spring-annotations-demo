@@ -1,4 +1,3 @@
-Spring Annotation task4
-->Implemented ApplicationContextAware
-->Implemented BeanFactoryAware
--->Implemented BeanNameAware
+Spring Annotation task5
+->Implemented Initializing bean
+->Implemented Disposable bean
