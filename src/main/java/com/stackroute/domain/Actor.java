@@ -1,9 +1,11 @@
 package com.stackroute.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class Actor {
 
     private String aname;
@@ -11,6 +13,12 @@ public class Actor {
     private int aage;
 
     public Actor() {
+    }
+
+    public Actor(String aname, String agender, int aage) {
+        this.aname = aname;
+        this.agender = agender;
+        this.aage = aage;
     }
 
     public String getAname() {

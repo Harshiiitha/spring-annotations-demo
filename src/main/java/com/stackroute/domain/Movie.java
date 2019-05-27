@@ -4,17 +4,19 @@ import com.stackroute.domain.Actor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class Movie {
 
     private String m_name;
-    @Autowired
     private Actor actor;
 
-    public Movie(String m_name) {
+    public Movie(String m_name, Actor actor) {
         this.m_name = m_name;
+        this.actor = actor;
     }
 
     public Movie(){

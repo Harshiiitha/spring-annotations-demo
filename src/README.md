@@ -1,3 +1,3 @@
-Spring Annotation task1
-->Using Configuration and Component annotations
-->Autowiring Byname
+Spring Annotation task2
+->Using constructors
+-->Checking singleton and prototype scope
