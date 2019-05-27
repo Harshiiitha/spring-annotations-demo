@@ -8,15 +8,15 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")
 public class Movie {
 
     private String m_name;
+
+    @Autowired
     private Actor actor;
 
-    public Movie(String m_name, Actor actor) {
+    public Movie(String m_name) {
         this.m_name = m_name;
-        this.actor = actor;
     }
 
     public Movie(){
