@@ -1,3 +1,2 @@
-Spring Annotation task5
-->Implemented Initializing bean
-->Implemented Disposable bean
+Spring Annotation task6
+->Implemented BeanPostProcessor

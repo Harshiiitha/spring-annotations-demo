@@ -2,6 +2,7 @@ package com.stackroute.config;
 
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.BeanLifecycleDemoBean;
+import com.stackroute.domain.BeanPostProcessorDemoBean;
 import com.stackroute.domain.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -30,6 +31,13 @@ public class SpringBeanConfiguration {
            BeanLifecycleDemoBean beanLifecycleDemoBean=new BeanLifecycleDemoBean();
            return beanLifecycleDemoBean;
         }
+    @Bean(name="beanpostprocessor")
+    public BeanPostProcessorDemoBean  getBeanPostProcessor()
+    {
+       BeanPostProcessorDemoBean beanPostProcessorDemoBean=new BeanPostProcessorDemoBean();
+       return beanPostProcessorDemoBean;
+    }
+
 
 
 }
