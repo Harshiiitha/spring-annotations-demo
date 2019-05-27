@@ -1,2 +1,4 @@
-Spring Annotation task3
-->Autowiring byName 
+Spring Annotation task4
+->Implemented ApplicationContextAware
+->Implemented BeanFactoryAware
+-->Implemented BeanNameAware
